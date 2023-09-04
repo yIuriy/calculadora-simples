@@ -1,0 +1,20 @@
+@charset "Utf-8";
+
+
+.bg-black{
+    background-color: #0F0F0F;
+}
+
+.tela{
+    height: 50px;
+    color: black;
+}
+
+.teclas{
+    width: 12%;
+    margin: 2px 0.5px; 
+    background-color: black;
+}
+.fs-1{
+    font-size: 3em;
+}
