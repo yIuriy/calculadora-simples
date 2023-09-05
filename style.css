@@ -1,20 +1,35 @@
 @charset "Utf-8";
 
-
-.bg-black{
-    background-color: #0F0F0F;
+:root {
+  --cor1: #a6a6a6;
+  --cor2: #737373;
+  --cor3: #404040;
+  --cor4: #262626;
+  --cor5: #0d0d0d;
 }
 
-.tela{
-    height: 50px;
-    color: black;
+.bg-gray{
+    background-color: var(--cor2);
 }
 
-.teclas{
-    width: 12%;
-    margin: 2px 0.5px; 
-    background-color: black;
+.bg-gray-dark {
+  background-color:var(--cor4);
 }
-.fs-1{
-    font-size: 3em;
+
+.container{
+    width: 540px;
+}
+
+.tela {
+  height: 50px;
+  color: black;
+}
+
+.teclas {
+  width: 18%;
+  margin: 2px 0.5px;
+  background-color: black;
+}
+.fs-1 {
+  font-size: 3em;
 }

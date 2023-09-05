@@ -16,20 +16,20 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-black text-center">
+  <body class="bg-gray-dark text-center">
     <h1 class="text-white fs-1">Calculadora</h1>
-
-    <div class="container rounded p-3">
+    <div class="container bg-gray shadow-sm rounded p-3 ">
       <div class="pb-2">
         <input
           type="text"
-          class="form-control m-auto w-50 tela text-primary"
+          class="form-control m-auto w-75 tela "
           placeholder="Digite algo"
+          id="telaDeResultado"
         />
       </div>
       <div class="row">
         <div class="col">
-          <button type="button" class="btn-lg bg-white border-light teclas">
+          <button type="button" class="btn-lg bg-white border-light teclas" id="teclaLimpar">
             C
           </button>
           <button type="button" class="btn-lg bg-white teclas border-light">
@@ -45,13 +45,13 @@
       </div>
       <div class="row">
         <div class="col">
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas id="tecla7">
             7
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla8">
             8
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla9">
             9
           </button>
           <button type="button" class="btn-lg bg-white teclas border-light">
@@ -61,39 +61,39 @@
       </div>
       <div class="row">
         <div class="col">
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla4">
             4
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla5">
             5
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla6">
             6
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light ">
             +
           </button>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla1">
             1
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla2">
             2
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla3">
             3
           </button>
-          <button type="button" class="btn-lg bg-white teclas border-light">
+          <button type="button" class="btn-lg bg-white teclas border-light" id="calcularResultado">
             =
           </button>
         </div>
       </div>
     </div>
   </body>
-  <script src="main"></script>
+  <script src="main.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
