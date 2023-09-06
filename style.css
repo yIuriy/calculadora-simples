@@ -1,35 +1,17 @@
-@charset "Utf-8";
+@charset "UTF-8";
 
-:root {
-  --cor1: #a6a6a6;
-  --cor2: #737373;
-  --cor3: #404040;
-  --cor4: #262626;
-  --cor5: #0d0d0d;
+.corpo-calculadora{
+  width: 237px;
+  border-radius: 7px;
+  padding: 12px 15px;
 }
 
-.bg-gray{
-    background-color: var(--cor2);
-}
+.tela{
+ margin-top: 3px;
+    margin-bottom: 7px;
+    height: 39px;
+    height: 41px;
+    border-radius: 5px;
+    width: 207px;
 
-.bg-gray-dark {
-  background-color:var(--cor4);
-}
-
-.container{
-    width: 540px;
-}
-
-.tela {
-  height: 50px;
-  color: black;
-}
-
-.teclas {
-  width: 18%;
-  margin: 2px 0.5px;
-  background-color: black;
-}
-.fs-1 {
-  font-size: 3em;
 }

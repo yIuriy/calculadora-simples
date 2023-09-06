@@ -16,80 +16,39 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-gray-dark text-center">
-    <h1 class="text-white fs-1">Calculadora</h1>
-    <div class="container bg-gray shadow-sm rounded p-3 ">
-      <div class="pb-2">
-        <input
-          type="text"
-          class="form-control m-auto w-75 tela "
-          placeholder="Digite algo"
-          id="telaDeResultado"
-        />
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn-lg bg-white border-light teclas " id="teclaLimpar">
-            C
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light" id="teclaRaizQuadrada">
-            &radic;
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="teclaDividir">
-            /
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="teclaMultiplicar">
-            x
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas id="tecla7">
-            7
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla8">
-            8
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla9">
-            9
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light" id="teclaSubtrair teclasNumericas">
-            -
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla4">
-            4
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla5">
-            5
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla6">
-            6
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="teclaSomar">
-            +
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla1">
-            1
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla2">
-            2
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light teclasNumericas" id="tecla3">
-            3
-          </button>
-          <button type="button" class="btn-lg bg-white teclas border-light" id="teclaIgualdade">
-            =
-          </button>
-        </div>
+  <body class="bg-primary m-auto">
+    <div class="container text-center m-auto">
+      <h1 class="display-4 ">Calculadora</h1>
+      <div class="bg-dark corpo-calculadora m-auto" >
+        <p class="bg-white tela justidy-center text-right">f</p>
+        <table class="m-auto"
+        > 
+        
+          <tr>
+            <td><button class="btn-lg">C</button></td>
+            <td><button class="btn-lg">&lt;</button></td>
+            <td><button class="btn-lg">&divide;</button></td>
+            <td><button class="btn-lg">&times;</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn-lg">7</button></td>
+            <td><button class="btn-lg">8</button></td>
+            <td><button class="btn-lg">9</button></td>
+            <td><button class="btn-lg">&minus;</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn-lg">4</button></td>
+            <td><button class="btn-lg">5</button></td>
+            <td><button class="btn-lg">6</button></td>
+            <td><button class="btn-lg">&plus;</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn-lg">1</button></td>
+            <td><button class="btn-lg">2</button></td>
+            <td><button class="btn-lg">3</button></td>
+            <td><button class="btn-lg">&equals;</button></td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
