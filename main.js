@@ -1,19 +1,34 @@
 let entradaAtual = "";
-let resultadoFinal = 0;
+let displayAtual = [];
+let ResultadoFinal = 0;
 
 const telaDeResultado = document.getElementById("telaDeResultado");
 
-const TeclaNumericaPressionada = document.querySelectorAll(".teclasNumericas");
+const teclaNumericaPressionada = document.querySelectorAll(".teclasNumericas");
 
 const teclaLimpar = document.getElementById("teclaLimpar");
 
+const teclaRaizQuadrada = document.getElementById("teclaRaizQuadrada");
+
+const teclaDividir = document.getElementById("teclaDividir");
+
+const teclaMultiplicar = document.getElementById("teclaMultiplicar");
+
+const teclaSubtrair = document.getElementById("teclaSubtrair");
+
+const teclaSomar = document.getElementById("teclaSomar");
+
+const teclaIgualdade = document.getElementById("calcularResultado")
+
+teclaSomar.addEventListener("click", somarValores);
+
 teclaLimpar.addEventListener("click", function () {
   entradaAtual = "";
-  resultadoFinal = 0;
+  displayAtual = [];
   mostrarTeclaPressionadaNaTela();
 });
 
-TeclaNumericaPressionada.forEach((tecla) => {
+teclaNumericaPressionada.forEach((tecla) => {
   tecla.addEventListener("click", function () {
     entradaAtual += tecla.innerText;
     console.log(tecla);
@@ -25,9 +40,9 @@ function mostrarTeclaPressionadaNaTela() {
   telaDeResultado.value = entradaAtual;
 }
 
-
-
-
+function somarValores(){
+  displayAtual = displayAtual[0] + displayAtual[2]
+}
 
 
 
