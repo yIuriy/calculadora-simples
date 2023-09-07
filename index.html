@@ -16,37 +16,170 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-primary m-auto">
-    <div class="container text-center m-auto">
-      <h1 class="display-4 ">Calculadora</h1>
-      <div class="bg-dark corpo-calculadora m-auto" >
-        <p class="bg-white tela justidy-center text-right">f</p>
-        <table class="m-auto"
-        > 
-        
+  <body class="bg-fundo">
+    <div class="container text-center bg-fundo">
+      <h1 class="display-4 p-2 text-white">Calculadora</h1>
+      <div class="bg-corpo corpo-calculadora m-auto">
+        <p
+          class="bg-white tela d-flex align-items-center justify-content-end text-right p-1"
+          id="tela-de-resultado"
+        ></p>
+        <table class="m-auto">
           <tr>
-            <td><button class="btn-lg">C</button></td>
-            <td><button class="btn-lg">&lt;</button></td>
-            <td><button class="btn-lg">&divide;</button></td>
-            <td><button class="btn-lg">&times;</button></td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="limparValoresNatela()"
+              >
+                C
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="limparUltimoValorDigitado()"
+              >
+                &lt;
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela('/')"
+              >
+                &divide;
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela('*')"
+              >
+                &times;
+              </button>
+            </td>
           </tr>
           <tr>
-            <td><button class="btn-lg">7</button></td>
-            <td><button class="btn-lg">8</button></td>
-            <td><button class="btn-lg">9</button></td>
-            <td><button class="btn-lg">&minus;</button></td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(7)"
+              >
+                7
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(8)"
+              >
+                8
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(9)"
+              >
+                9
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela('-')"
+              >
+                &minus;
+              </button>
+            </td>
           </tr>
           <tr>
-            <td><button class="btn-lg">4</button></td>
-            <td><button class="btn-lg">5</button></td>
-            <td><button class="btn-lg">6</button></td>
-            <td><button class="btn-lg">&plus;</button></td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(4)"
+              >
+                4
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(5)"
+              >
+                5
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(6)"
+              >
+                6
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela('+')"
+              >
+                &plus;
+              </button>
+            </td>
           </tr>
           <tr>
-            <td><button class="btn-lg">1</button></td>
-            <td><button class="btn-lg">2</button></td>
-            <td><button class="btn-lg">3</button></td>
-            <td><button class="btn-lg">&equals;</button></td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(1)"
+              >
+                1
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(2)"
+              >
+                2
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(3)"
+              >
+                3
+              </button>
+            </td>
+            <td rowspan="2">
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="calcularResultado()"
+                id="igualdade"
+              >
+                &equals;
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button
+                class="btn-lg bg-black text-white borda"
+                onclick="mostrarValoresNaTela(0)"
+                id="zero"
+              >
+                0
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn-lg bg-black text-white fs-3 borda"
+                onclick="mostrarValoresNaTela('.')"
+              >
+                .&nbsp;
+              </button>
+            </td>
           </tr>
         </table>
       </div>
